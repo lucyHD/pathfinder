@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Phenomena{% endblock %}
+{% block content %}
+
+{% for location in locations %}
+{{ all_location.location }}
+
+{% empty %}
+    <li>No events to show</li>
+{% endfor %}
+
+{% endblock %}

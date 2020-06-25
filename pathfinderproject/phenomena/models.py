@@ -21,7 +21,7 @@ class Date(models.Model):
 class Location(models.Model):
 
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
-    location = models.CharField(max_length=200)
+    location = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         return self.location
