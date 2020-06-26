@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 {% block title %}Phenomena{% endblock %}
 {% block content %}
-<ul>
-{% for event in events %}
-   
-<li><a href="{% url 'single' event.id %}"> {{ event.name }}</a></li>
-    
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'phenomena/main.css' %}">
+
+<div id="indexTitle">The Pathfinder Project presents</div>
+
+<div id="indexHeading">Unexplained events:</div>
+
+{% for event in events %}   
+<div><a id="indexEvents" href="{% url 'single' event.id %}"> {{ event.name }}</a></div>
+
 {% empty %}
-    <li>No events to show</li>
+    No events to show
 {% endfor %}
-</ul>
+
 {% endblock %}
