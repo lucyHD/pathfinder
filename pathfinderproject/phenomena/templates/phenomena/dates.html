@@ -7,7 +7,7 @@
 
 <ul id=date-list>
     {% for date in dates %}
-    <li><a href="{% url 'index' %}">{{ date.date }}</a></li> 
+    <li>{{ date.date }}</li> 
 
     {% empty %}
     <li>No events to show</li>

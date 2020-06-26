@@ -7,7 +7,8 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("locations/", views.locations, name="locations"),
     path("country/<str:country>/", views.country, name="country"),
-    path("dates/", views.dates, name="dates")
+    path("dates/", views.dates, name="dates"),
+   
 ] 
 
 

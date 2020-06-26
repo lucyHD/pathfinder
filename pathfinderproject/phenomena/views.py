@@ -28,6 +28,13 @@ def dates(request):
     return render(request, "phenomena/dates.html", all_dates)
 
 
+# def specificdate (request, specificdate):
+#     req_date = Date.objects.get(date=specificdate)
+#     event_date = {"dates": Date.objects.filter(date__date=req_date)}
+#     return render(request, "phenomena/specificdate.html", event_date)
+
+
+
 
 
     
