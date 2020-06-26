@@ -1,13 +1,26 @@
 {% extends "base.html" %}
+{% load static %} 
+{% block style %} <link rel="stylesheet" href="{% static 'phenomena/style.css' %}"> {% endblock %}
 {% block title %}Phenomena{% endblock %}
 {% block content %}
+
+<div id="indexTitle"> The Pathfinder Project presents</div>
+
+<div id="indexHeading"> Unexplained events: </div>
+
 <ul>
 {% for event in events %}
    
-<li><a href="{% url 'single' event.id %}"> {{ event.name }}</a></li>
+<li><a id="indexEvents" href="{% url 'single' event.id %}"> {{ event.name }}</a></li>
+<br> 
     
 {% empty %}
     <li>No events to show</li>
 {% endfor %}
 </ul>
 {% endblock %}
+
+
+ <!-- in line 7 - we are linking to a single event by the event id (which is the argument), and within the li tag we are display the name of the event(from the event model)
+The url 'single' comes from the route we set in urls.py - we called it name="single" -->
+    

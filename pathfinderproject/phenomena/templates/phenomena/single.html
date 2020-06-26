@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+{% load static %} 
+{% block style %} <link rel="stylesheet" href="{% static 'phenomena/style.css' %}"> {% endblock %}
 {% block title %}Phenomena{% endblock %}
 {% block content %}
 
-{{event.name}}
-{{ event.info }}
+<h1 id="singleHeading">{{event.name}}</h1>
+<p id="singleParagraph">{{ event.info }}</p>
+<!-- <div> <p> This took place in: {{ date.date}}</p></div> -->
 
 {% endblock %}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&family=Orbitron:wght@500&display=swap');
+
+body {
+    background: white url("images/unsolvedMysteries.jpeg") no-repeat;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif; 
+    }
+
+#nav-bar{
+    color: white; 
+    display: flex; 
+    justify-content: flex-end; 
+      
+}
+
+
+#nav-link{
+    padding-top: 20px; 
+    padding-right: 20px;
+ 
+}
+
+
+#indexTitle {
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 5px white;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+#indexHeading {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 20px 0 10px 20px;
+    font-family: 'Orbitron', sans-serif; 
+    }
+
+#indexEvents {
+    font-family: monospace;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 20px;
+    margin: 5px 0 5px 40px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif; 
+    }
+
+#indexEvents:hover {
+    color: black;
+    text-shadow: 1px 1px 5px white;
+    font-size: 40px;
+    }
+
+
+#singleHeading{
+    text-align: center; 
+    color: white; 
+}
+
+#singleParagraph{
+    text-align: center;
+    color: white; 
+}
+
+
+#location-list{
+    color: white; 
+}
+
+#location-heading{
+    color: white; 
+}
+
+#date-list{
+    color: white; 
+}
+
+#dates-heading{
+    color: white; 
+
+}

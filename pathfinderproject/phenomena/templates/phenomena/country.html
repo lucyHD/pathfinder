@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Phenomena{% endblock %}
+{% block content %}
+
+<h2> The following events happened in this country:</h2>
+<ul>
+    {% for event in events %}
+
+    <li>{{ event.name }}</li>
+
+</ul>
+        
+    {% empty %}
+        <li>No events in this country!</li>
+    {% endfor %}
+
+
+    {% endblock %}
+    
+

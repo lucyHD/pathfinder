@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% block style %}{% endblock %}
         <title>{% block title %}{% endblock %}</title>
-    </head>
+      
+       
+        </head>
+        <nav id="nav-bar">
+            <div id="nav-link"><a href="{% url 'index' %}">Events </a> </div>
+            <div id="nav-link"><a href="{% url 'locations' %}">Locations</a></div>
+            <div id="nav-link"><a  href="{% url 'dates' %}">Dates</a></div>
+        </nav>
     <body>
         {% block content %}{% endblock %}
     </body>

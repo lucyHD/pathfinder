@@ -19,7 +19,8 @@ from django.urls import include, path
 urlpatterns = [
     path("phenomena/", include("phenomena.urls")),
     path('admin/', admin.site.urls),
-]
+] 
+
 
 
 #when django sees include(), it removes the part of the url up to that point(so here, 'phenomena') and send the rest of the string ( here '/') to the phenomena.urls to be processed
