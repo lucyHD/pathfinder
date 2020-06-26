@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load static %} 
-{% block title %}Phenomena{% endblock %}
 {% block content %}
 {% block style %} <link rel="stylesheet" href="{% static 'phenomena/style.css' %}"> {% endblock %}
 
-<h2 id="location-heading"> Unexplained events have taken place in the following locations: </h2>
-<ul id="location-list">
-    {% for location in locations %}
-  <li>{{ location.location }}</li> 
+<h2 id="dates-heading">Unexplained events took place on the following dates: </h2>
+
+<ul id=date-list>
+    {% for date in dates %}
+    <li><a href="{% url 'index' %}">{{ date.date }}</a></li> 
 
     {% empty %}
     <li>No events to show</li>
