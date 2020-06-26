@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&family=Orbitron:wght@500&display=swap');
 
+
+
+
 body {
     background: white url("images/unsolvedMysteries.jpeg") no-repeat;
     background-size: cover;
@@ -10,16 +13,23 @@ body {
     color: white; 
     display: flex; 
     justify-content: flex-end; 
-      
+    font-family: 'Orbitron', sans-serif; 
+
 }
 
 
 #nav-link{
     padding-top: 20px; 
     padding-right: 20px;
- 
+    color: white;
+    text-decoration: none;
 }
 
+#nav-link:hover{
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    font-size: 25px;
+}
 
 #indexTitle {
     font-family: 'Orbitron', sans-serif; 
@@ -82,4 +92,16 @@ body {
 #dates-heading{
     color: white; 
 
+}
+
+#country-heading{
+    color: white;
+}
+
+#country-list{
+    color: white; 
+}
+
+#singleDate, #single-location{
+    color: white; 
 }

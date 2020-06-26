@@ -7,7 +7,7 @@
 <h2 id="location-heading"> Unexplained events have taken place in the following locations: </h2>
 <ul id="location-list">
     {% for location in locations %}
-  <li>{{ location.location }}</li> 
+  <li><a href="{% url 'country' location.location %}">{{ location.location }}</a></li> 
 
     {% empty %}
     <li>No events to show</li>
